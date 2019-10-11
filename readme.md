@@ -16,7 +16,7 @@ for your team, not against you.
 ### File Overview
 
 ##### server.py
-`server.py` acts as the C2 for the distributed computing system. It distributes commands via `/GET` requests made to it.
+`server.py` acts as the C2 for the distributed computing system. It distributes commands via `/GET` requests made to it. Requires a file named `targets.txt` to function, example of this file has been uploaded
 
 API Functions:
 
