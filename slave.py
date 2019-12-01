@@ -35,6 +35,10 @@ def commrequest(ip, password):
         srv.put(filebase)
 
     srv.close()
+    
+    os.system("rm -rf " + filebase + ".xml")
+    os.system("rm -rf " + filebase + ".gnmap")
+    os.system("rm -rf " + filebase + ".nmap")
     # rinse and repeat
     commrequest(ip, password)
 
@@ -42,8 +46,8 @@ def commrequest(ip, password):
 if __name__ == "__main__":
 
     # inputs the data required for the program to function
-    print("Input the IP Will gives you here: ")
+    print("Input the server IP: ")
     ip = input()
-    print("Input the password Will gives you here: ")
+    print("Input the SFTP user password: ")
     password = input()
     commrequest(ip, password)
